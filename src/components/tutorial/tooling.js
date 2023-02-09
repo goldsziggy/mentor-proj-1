@@ -2,7 +2,9 @@ import styled from "styled-components";
 import DialogButton from "../dialog-button";
 import { GutterListContainer } from "../component-styles";
 
-const IconRight = styled.i``;
+const IconLeft = styled.i`
+  display: block;
+`;
 
 const Tooling = () => {
   return (
@@ -17,7 +19,7 @@ const Tooling = () => {
               tools we are using
             </p>
           </div>
-          <IconRight className="nes-ash"></IconRight>
+          <IconLeft className="nes-ash"></IconLeft>
         </section>
       </section>
 
