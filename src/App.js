@@ -4,6 +4,7 @@ import Title from "./components/title";
 import SkillsAndObjectives from "./components/skills-and-objectives";
 import AppSetup from "./components/tutorial/app-setup";
 import Tooling from "./components/tutorial/tooling";
+import PageStructure from "./components/tutorial/page-structure";
 
 // Create a global wrapper around the entire app -- here we can apply some page specific styling
 const AppContainer = styled.div`
@@ -26,6 +27,7 @@ function App() {
       <CenteredH2>Tutorial</CenteredH2>
       <AppSetup />
       <Tooling />
+      <PageStructure />
     </AppContainer>
   );
 }
