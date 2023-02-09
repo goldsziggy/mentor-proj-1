@@ -1,28 +1,11 @@
 import styled from "styled-components";
 import Dialog from "../modal";
+import DialogButton from "../dialog-button";
+import { GutterListContainer } from "../component-styles";
 
 const IconRight = styled.i`
   float: right;
 `;
-const InlineButton = styled.button`
-  transform: scale(0.5);
-
-  left: -3rem;
-`;
-
-const DialogButton = ({ dialogId, children }) => {
-  return (
-    <InlineButton
-      type="button"
-      className="nes-btn is-primary"
-      onClick={() => {
-        document.getElementById(dialogId).showModal();
-      }}
-    >
-      {children}
-    </InlineButton>
-  );
-};
 
 const NewProjDialog = () => {
   return (
@@ -52,8 +35,8 @@ const DepDialog = () => {
     <Dialog
       id="dep-dialog"
       title="Run the rollowing command"
-      description="These dependences will help us with some common development tasks."
-      command="npm install styled-components"
+      description="These dependences will help us with some common development tasks and style of our website."
+      command="npm install styled-components nes.css"
     />
   );
 };
@@ -153,7 +136,7 @@ const AppSetup = () => {
         </section>
       </section>
 
-      <div className="lists">
+      <GutterListContainer className="lists">
         <ul className="nes-list is-disc">
           <li>
             Run create-react-app to create a new project folder.{" "}
@@ -185,11 +168,9 @@ const AppSetup = () => {
             <DialogButton dialogId="eslint-dialog">Instructions</DialogButton>
           </li>
         </ul>
-      </div>
+      </GutterListContainer>
     </section>
   );
 };
 
 export default AppSetup;
-
-<section></section>;
