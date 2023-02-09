@@ -37,7 +37,7 @@ const LightContainerWithTitle = ({ children, title }) => {
 
 // override the dark list style to be make the before white
 const DarkList = styled.ul`
-  li:before {
+  && li:before {
     color: white;
   }
 `;

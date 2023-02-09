@@ -7,6 +7,7 @@ import AppSetup from "./components/tutorial/app-setup";
 // Create a global wrapper around the entire app -- here we can apply some page specific styling
 const AppContainer = styled.div`
   margin-top: 1rem;
+  width: 80%;
 `;
 const CenteredH2 = styled.h2`
   text-align: center;
